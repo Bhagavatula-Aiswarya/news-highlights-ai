@@ -12,7 +12,7 @@ documents = df["summary"].fillna("").tolist()
 titles = df["title"].tolist()
 
 # Encode with SentenceTransformer
-embedder = SentenceTransformer("all-MiniLM-L6-v2")
+embedder = SentenceTransformer("models/all-MiniLM-L6-v2")
 doc_embeddings = embedder.encode(documents, convert_to_tensor=False)
 
 # Build FAISS index

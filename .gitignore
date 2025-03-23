@@ -14,4 +14,3 @@ venv/
 *.h5
 *.ckpt
 .pytest_cache/
-models/
